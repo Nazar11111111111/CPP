@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Laboratory work №3";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div>
+            <h2>@ViewData["Title"]</h2>
+            <br />
+            <p>
+                <b>Умова завдання:</b>
+            </p>
+
+            <p>
+                На шахівниці N×N в клітці (x1, y1) стоїть голодний шаховий кінь. Він хоче потрапити до клітини (x2, y2), де росте смачна шахова трава. 
+                <br />
+                Яку найменшу кількість ходів він має для цього зробити?
+                <br />
+                <br />
+                <br />
+                <i>Вхідні дані</i>
+                <br />
+                Вхідний файл INPUT.TXT містить п'ять чисел: N, x1, y1, x2, y2 (5 ≤ N ≤ 20, 1 ≤ x1, y1, x2, y2 ≤ N). 
+                Ліва верхня клітина дошки має координати (1,1), права нижня – (N,N).
+                <br />
+                <br />
+                <i>Вихідні дані</i>
+                <br />
+                У вихідний файл OUTPUT.TXT необхідно вивести найменшу кількість ходів коня.
+            </p>
+
+            <br />
+
+
+            <h2>Input Data</h2>
+            <form method="POST">
+                <label>Enter input file path:</label><br />
+                <input class="file-path" type="text" name="input_path" style="width: 700px" />
+
+                <br />
+
+                <label>Enter output file path:</label><br />
+                <input class="file-path" type="text" name="output_path" style="width: 700px" />
+
+                <br />
+                <br />
+
+                <button class="btn btn-dark" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

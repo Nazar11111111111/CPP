@@ -1,0 +1,18 @@
+﻿@model WebApp.Models.ProfileModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <h1 class="display-4">Welcome back, <i>@Model.Username</i></h1>
+        <a class="btn btn-dark" href="@Url.Action("Index", "LaboratoryWorks")">Explore laboratory works</a>
+    }
+    else
+    {
+        <h1 class="display-4">Welcome</h1>
+        <p>You must be logged in to access</p>
+        <a class="btn btn-dark" href="@Url.Action("Login", "Account")">Login</a>
+    }
+</div>

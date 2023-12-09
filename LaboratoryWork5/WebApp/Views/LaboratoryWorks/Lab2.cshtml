@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Laboratory work №2";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div>
+            <h2>@ViewData["Title"]</h2>
+            <br />
+            <p>
+                <b>Умова завдання:</b>
+            </p>
+
+            <p>
+                Знайдіть n-й елемент послідовності, що строго зростає, яка описується наступними правилами:
+                <ol>
+                    <li> число 1 є елементом послідовності. </li>
+                    <li> якщо a – елемент послідовності, то 2a, 3a, 5a також є елементами послідовності. </li>
+                    <li> послідовності належать лише елементи, задані правилами 1 та 2. </li>
+                </ol>
+
+                <br />
+                <br />
+                <br />
+                <i>Вхідні дані</i>
+                <br />
+                Вхідний файл INPUT.TXT містить одне натуральне число n (n ≤ 10000).
+                <br />
+                <br />
+                <i>Вихідні дані</i>
+                <br />
+                У вихідний файл OUTPUT.TXT виведіть одне число - n елемент послідовності.
+            </p>
+
+            <br />
+
+
+            <h2>Input Data</h2>
+            <form method="POST">
+                <label>Enter input file path:</label><br />
+                <input class="file-path" type="text" name="input_path" style="width: 700px" />
+
+                <br />
+
+                <label>Enter output file path:</label><br />
+                <input class="file-path" type="text" name="output_path" style="width: 700px" />
+
+                <br />
+                <br />
+
+                <button class="btn btn-dark" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

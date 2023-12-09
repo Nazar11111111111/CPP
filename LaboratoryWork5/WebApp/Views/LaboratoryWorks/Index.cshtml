@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Laboratory works list";
+}
+
+
+<div class="container text-center">
+    <h2>@ViewData["Title"]</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-2">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><a class="btn btn-dark" href="@Url.Action("Lab1", "LaboratoryWorks")">Laboratory work №1</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="btn btn-dark" href="@Url.Action("Lab2", "LaboratoryWorks")">Laboratory work №2</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="btn btn-dark" href="@Url.Action("Lab3", "LaboratoryWorks")">Laboratory work №3</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
