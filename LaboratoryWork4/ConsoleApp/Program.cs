@@ -1,5 +1,6 @@
 ﻿using ConsoleApp;
 using McMaster.Extensions.CommandLineUtils;
+using System.Reflection;
 
 
 var app = new CommandLineApplication
@@ -14,7 +15,8 @@ app.Command("version", cmd =>
     cmd.Description = "Display version information";
     cmd.OnExecute(() =>
     {
-        Console.WriteLine("LabRunner v1.0 by Nazar Leonchuk");
+        string appVersion = Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "unknown version";
+        Console.WriteLine($"LabRunner  {appVersion} by Nazar Leonchuk");
         return 0;
     });
 });

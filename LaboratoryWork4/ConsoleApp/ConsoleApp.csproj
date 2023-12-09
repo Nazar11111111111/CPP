@@ -8,6 +8,8 @@
     <PackageId>NLeonchuk</PackageId>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>NLeonchuk</ToolCommandName>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Title>ConsoleApp</Title>
   </PropertyGroup>
 
   <ItemGroup>
